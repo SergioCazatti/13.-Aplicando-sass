@@ -1,171 +1,169 @@
-body { background-color:black; } 
+@charset "UTF-8";
+body {
+  background-color: black;
+}
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 /*Esta clase es para que se vea bien el degradé de la clase encabezado*/
-.fondoNegroSuperior{
-    background-color: black;
+.fondoNegroSuperior {
+  background-color: black;
 }
 
-.encabezado{
-    background-image: linear-gradient(to left, rgb(0, 0, 0),  darkslateblue);
+.imagenFondoInicio {
+  background-image: url(../img/gym.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.redesSociales img{
-    width: 24px;
+.imagenFondoNosotros {
+  background-image: url(../img/nosotros.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.navbar li:hover{
-    background-color: darkslateblue;
-    color:white;
+.imagenFondoEntrenamientos {
+  background-image: url(../img/entrenamientos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.navbar ul li a{
-    text-decoration: none;
-    color: white;
-}
-.navbar .seleccionado{
-    background-color: rgb(53, 45, 102);
-    color:white;
+.imagenFondoTienda {
+  background-image: url(../img/tienda.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.imagenFondoInicio{
-    background-image: url(../img/gym.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;     
+.imagenFondoContacto {
+  background-image: url(../img/contacto.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.imagenFondoNosotros{
-    background-image: url(../img/nosotros.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.encabezado {
+  background-image: linear-gradient(to left, black, darkslateblue);
 }
 
-.imagenFondoEntrenamientos{
-    background-image: url(../img/entrenamientos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.redesSociales img {
+  width: 24px;
 }
 
-.imagenFondoTienda{
-    background-image: url(../img/tienda.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;    
+.navbar ul li:hover {
+  background-color: darkslateblue;
+  color: white;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+.navbar .seleccionado {
+  background-color: rgb(53, 45, 102);
+  color: white;
 }
 
-.imagenFondoContacto{
-    background-image: url(../img/contacto.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;   
+.cajaOpaca {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.cajaOpaca{
-    background-color: rgb(0,0,0,0.50);
+.boton {
+  padding: 10px;
+  background-color: rgb(72, 61, 139);
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.boton:hover {
+  background-color: rgb(111, 96, 211);
 }
 
-.btn{
-    padding: 10px;
-    background-color: rgba(72, 61, 139);
-    border: 0;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
+.boton_lg {
+  width: 220px;
+  height: 50px;
 }
 
-.btn_lg{
-    width: 220px;
-    height: 50px;
+.boton_md {
+  width: 200px;
+  height: 50px;
 }
 
-.btn_md{
-    width: 200px;
-    height: 50px;
+.boton_wa {
+  background-image: url(../img/wa.png);
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
 }
 
-.btn_wa{
-    background-image: url(../img/wa.png);
-    background-repeat: no-repeat;
-    margin-bottom: 20px;
+.inputTexto {
+  margin: 10px;
+  width: 300px;
+  height: 30px;
+  font-size: 1.2rem;
+  border-color: grey;
+  border-radius: 10px;
+  border-style: solid;
+  background-image: url(../img/search.png);
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
-.navbar .seleccionado{
-    background-color: rgb(53, 45, 102);
-    color:white;
+.cajaContacto {
+  color: lightgray;
+  font-size: 1.2rem;
+  padding: 10px;
+  background-color: rgb(39, 38, 38);
 }
 
-.inputTexto{
-    margin: 10px;
-    width: 300px;
-    height: 30px;
-    font-size: 1.2rem;
-    border-color: grey;
-    border-radius: 10px;
-    border-style: solid;
-    background-image: url(../img/search.png);
-    background-size: 24px;
-    background-repeat: no-repeat;
-    background-position: right;    
+.infoContacto img {
+  margin-top: 10px;
+  width: 20px;
+  padding-right: 10px;
 }
 
-
-.cajaContacto{
-    color: lightgray;
-    font-size: 1.2rem;
-    padding: 10px;
-    background-color: rgb(39, 38, 38);
+.formularioContacto input {
+  height: 40px;
+  width: 50%;
+}
+.formularioContacto textarea {
+  width: 100%;
 }
 
-.infoContacto img{
-    margin-top: 10px;
-    width: 20px;
-    padding-right: 10px;
+.fontContacto {
+  font-size: 1.2rem;
+  color: grey;
+  border-color: grey;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-color: rgb(39, 38, 38);
 }
 
-.formularioContacto input{
-    height: 40px;
-    width: 50%;
+.botonesContacto {
+  display: flex;
+  justify-content: space-around;
+}
+.botonesContacto input {
+  width: 30%;
 }
 
-.formularioContacto textarea{
-    width: 100%;
+.mapaContactoMedio {
+  text-align: center;
 }
 
-.fontContacto{
-    font-size: 1.2rem;
-    color: grey;
-    border-color: grey;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 5px;
-    background-color: rgb(39, 38, 38);
+.mapaContactoChico {
+  display: none;
+  text-align: center;
 }
 
-.botonesContacto{
-    display: flex;
-    justify-content: space-around;
-}
-
-.botonesContacto input{
-    width: 30%;
-}
-.mapaContactoMedio{
-    text-align: center;
-}
-
-.mapaContactoChico{
-    display: none;
-    text-align: center;
-}
-
-.pie{
-    background-color: darkslateblue;
+.pie {
+  background-color: darkslateblue;
 }
