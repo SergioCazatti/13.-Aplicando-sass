@@ -14,40 +14,105 @@ body {
   background-color: black;
 }
 
+.boton, .boton_wa, .boton_md, .boton_lg {
+  padding: 10px;
+  background-color: rgb(72, 61, 139);
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.boton:hover, .boton_wa:hover, .boton_md:hover, .boton_lg:hover {
+  background-color: rgb(111, 96, 211);
+}
+
+.boton_lg {
+  width: 220px;
+  height: 50px;
+}
+
+.boton_md {
+  width: 200px;
+  height: 50px;
+}
+
+.boton_wa {
+  width: 250px;
+  height: 50px;
+  background-image: url(../img/wa.png);
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
 .imagenFondoInicio {
-  background-image: url(../img/gym.jpg);
+  background-image: url(../img/Inicio.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .imagenFondoNosotros {
-  background-image: url(../img/nosotros.jpg);
+  background-image: url(../img/Nosotros.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .imagenFondoEntrenamientos {
-  background-image: url(../img/entrenamientos.jpg);
+  background-image: url(../img/Entrenamientos.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .imagenFondoTienda {
-  background-image: url(../img/tienda.jpg);
+  background-image: url(../img/Tienda.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .imagenFondoContacto {
-  background-image: url(../img/contacto.webp);
+  background-image: url(../img/Contacto.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
+/* .imagenFondoInicio{
+    background-image: url(../img/gym.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;     
+}
+
+.imagenFondoNosotros{
+    background-image: url(../img/nosotros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.imagenFondoEntrenamientos{
+    background-image: url(../img/entrenamientos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.imagenFondoTienda{
+    background-image: url(../img/tienda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+.imagenFondoContacto{
+    background-image: url(../img/contacto.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+}
+ */
 .encabezado {
   background-image: linear-gradient(to left, black, darkslateblue);
 }
@@ -71,35 +136,6 @@ body {
 
 .cajaOpaca {
   background-color: rgba(0, 0, 0, 0.5);
-}
-
-.boton {
-  padding: 10px;
-  background-color: rgb(72, 61, 139);
-  border: 0;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-.boton:hover {
-  background-color: rgb(111, 96, 211);
-}
-
-.boton_lg {
-  width: 220px;
-  height: 50px;
-}
-
-.boton_md {
-  width: 200px;
-  height: 50px;
-}
-
-.boton_wa {
-  background-image: url(../img/wa.png);
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
 }
 
 .inputTexto {

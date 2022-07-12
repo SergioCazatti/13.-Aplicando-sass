@@ -1,4 +1,15 @@
-.imagenFondoInicio{
+@each $imagen, $ext in $fondos{
+    .imagenFondo#{$imagen}{
+        background-image: url(../img/#{$imagen}.#{$ext});
+        background-repeat: no-repeat;
+        background-size: cover;
+        @if $imagen != $fondoPrincipal {
+            background-position: center;
+        }
+    }
+}
+
+/* .imagenFondoInicio{
     background-image: url(../img/gym.jpg);
     background-repeat: no-repeat;
     background-size: cover;     
@@ -31,3 +42,4 @@
     background-size: cover;
     background-position: center;   
 }
+ */
